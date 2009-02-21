@@ -3,3 +3,58 @@ Quick app for Sacramento Ruby Group jquery presentation.
 Written and tested on edge with mysql. Baseline data is created in the migration file.
 
 This code is quick and dirty, but feel free to use for any purpose.
+
+Below is the outline of the presentation:
+
+vi setup
+=====
+index, table split | books controller | javascript, layout buffers
+
+overview
+======
+- alternative to prototype & scriptaculous
+- not for everyone, rjs is fine
+- jrails is a drop in replacement for prototype and scriptaculous
+- jquery can be used alongside rails defaults jquery.noConflict();
+
+why I use
+======
+- use because more terse than rails defaults
+- unobtrusive javascript
+- use to group behavior, not true unobtrusive javascript
+	- better insulation from change
+
+layout
+====
+- yield :js, puts javascript in %head
+
+index, table split - index
+===============
+- selectors
+	- identify unique elements
+	- groups of elements
+	- setup groups of elements with minimal code
+- wrapped set
+
+- striping
+- table sort
+- sort table
+- custom extension
+- facebox
+
+- ajax setup
+	- before and after to toggle progress indicators
+	- error handling talk to, demonstrate next
+- ajax get
+	- turn off server to demonstrate error handling	
+
+index, divs split - index?divs
+==================
+- expand
+- popup
+- sort div
+
+edit?ajax (show with and without ajax)
+=======================
+- post
+
