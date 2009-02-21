@@ -1,0 +1,69 @@
+- content_for :js do
+  :javascript
+    function setupTable() {
+      $('th>a').each(function(index) {
+        $(this).sortable(index);
+      });
+
+      // facebox link
+      $('.bookView').facebox();
+    }
+
+    $(function() {
+      // table view functions
+      // $("table tr:nth-child(even)").addClass("dark");
+
+      // ajax - get
+      // callback to hookup table behavior
+      $('#refresh').click(function() {
+        $('#table_data').load($(this).attr('href'), function() { setupTable(); });
+        return false;
+      });
+
+      setupTable();
+
+
+      // div view functions
+      $('.divSort').click(function() {
+        $('#sortOverlay').hide();
+        $('.book').tsort($(this).attr('href'));
+        return false;
+      });
+
+      $('.description').hide();
+      $('#sortOverlay').hide();
+
+      $('.bookExpand').toggle(
+        function() { $(this).html('-').siblings('.description').fadeIn();  },
+        function() { $(this).html('+').siblings('.description').fadeOut(); }
+      );
+
+      // setup sort popup trigger
+      $('#sort').mouseover(function() {
+        var offset = $(this).offset();
+        var left = offset.left; 
+        var top = offset.top - 12;
+
+        var offset = $('#content').offset();
+        left = left - offset.left + 12; 
+
+        $('#sortOverlay').css({'position':'absolute', 'left':left + 'px', 'top':top + 'px'}).show();
+      });
+
+      // hide sort popup
+      $('#sortOverlay').mouseleave(function() {
+        $(this).hide();
+      });
+    });
+
+%h1
+  Books
+  = link_to "New", new_book_path
+
+- if @divs
+  #div_data
+    = render :partial => 'divs'
+- else
+  = link_to "Refresh", books_path, :id => 'refresh'
+  #table_data
+    = render :partial => 'table'

@@ -1,0 +1,16 @@
+!!! Strict
+%html
+  %head
+    %title Books Demo
+    = stylesheet_link_tag "application", "facebox"
+    = javascript_include_tag "jquery", "jquery.form", "jquery.tinysort", "facebox", "application"
+
+    = yield :js
+
+  %body{ :id => controller.controller_name }
+    #content
+      = yield
+
+    #footer
+      Loaded at
+      = Time.now.strftime('%m/%d/%Y %H:%M:%S')

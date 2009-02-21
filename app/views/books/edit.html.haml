@@ -1,0 +1,13 @@
+- if @ajax
+  - content_for :js do
+    :javascript
+      $(function() {
+        $('form').submit(function() {
+          $(this).ajaxSubmit({target:'#bookInfo'});
+          return false;
+        });
+      });
+%h1 Edit Book
+
+#bookInfo
+   render :partial => 'fields'

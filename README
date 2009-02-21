@@ -1,0 +1,5 @@
+Quick app for Sacramento Ruby Group jquery presentation.
+
+Written and tested on edge with mysql. Baseline data is created in the migration file.
+
+This code is quick and dirty, but feel free to use for any purpose.

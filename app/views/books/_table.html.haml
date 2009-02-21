@@ -1,0 +1,16 @@
+%table#books
+  %thead
+    %tr
+      %th= link_to "Title", "#"
+      %th= link_to "Author", "#"
+      %th= link_to "Description", "#"
+  %tbody
+    - for book in @books
+      %tr{ :class => cycle("light", "dark") }
+        %td
+          = h(book.title)
+          = link_to "Edit", edit_book_path(book), :class => "bookEdit"
+          |
+          = link_to "View", book, :class => 'bookView'
+        %td= h(book.author)
+        %td= h(truncate(book.description, :length => 40))

@@ -1,0 +1,241 @@
+body {
+  color:                  #383546;
+  background:             #575442;
+}
+
+body, p, ol {
+  font-family:            verdana, arial, helvetica, sans-serif;
+  font-size:              11px;
+  padding:                0;
+  position:               relative;
+  margin:                 0 auto;
+  width:                  800px;
+}
+
+dt label {
+  margin-left:            4px;
+  margin-bottom:          4px;
+  display:                block;
+  font-size:              11px;
+  font-weight:            bold;
+}
+
+dd {
+  margin-left:            4px;
+  margin-bottom:          8px;
+  font-size:              14px;
+}
+
+h1, h2, h3 {
+  margin:                 2px;
+}
+
+h1 > a {
+  font-size:              11px;
+  font-weight:            normal;
+}
+
+a {
+  color:                  red;
+  text-decoration:        none;
+}
+a:hover {
+  color:                  red;
+  text-decoration:        underline;
+}
+
+fieldset {
+  padding:                4px;
+  margin-bottom:          4px;
+}
+
+img {
+  vertical-align:         middle;
+}
+
+input, select, textarea {
+  margin:                 6px;
+}
+
+input {
+  vertical-align:         middle;
+}
+
+textarea {
+  font-family:            verdana, arial, helvetica, sans-serif;
+  font-size:              11px;
+}
+
+label {
+  margin-left:            6px;
+  margin-bottom:          -5px;
+  display:                block;
+}
+
+table#books {
+  border-collapse:        collapse;
+  border:                 1px solid #231E38;
+  width:                  100%;
+  margin-top:             4px;
+}
+
+table#books th {
+  background:             #322F3C;
+  color:                  white;
+  border:                 1px solid #231E38;
+  padding:                4px;
+}
+
+table#books td {
+  border:                 1px solid #231E38;
+  padding:                4px;
+}
+
+ul#books {
+  margin-left:            4px;
+  padding-left:           0;
+  list-style:             none;
+}
+
+#sort {
+  padding:                4px;
+  width:                  50px;
+  text-align:             left;
+  margin-bottom:          6px;
+}
+
+#sortOverlay {
+  margin:                 0;
+  padding:                0;
+  border:                 2px solid #231E38;   
+  width:                  120px;
+  float:                  left;
+  background:             #C0BDA7;
+}
+
+#sortOverlay > p {
+  margin:                 2px
+}
+
+#sortOverlay > ul {
+  margin:                 2px;
+  list-style:             none;
+  padding:                0;
+}
+
+#errorExplanation {
+  width:                  400px;
+  border:                 2px solid red;
+  padding:                7px;
+  padding-bottom:         12px;
+  margin-bottom:          20px;
+  background-color:       #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align:             left;
+  font-weight:            bold;
+  padding:                5px 5px 5px 15px;
+  font-size:              12px;
+  margin:                 -7px;
+  background-color:       #c00;
+  color:                  #fff;
+}
+
+#errorExplanation p {
+  color:                  #333;
+  margin-bottom:          0;
+  padding:                5px;
+}
+
+#errorExplanation ul {
+  list-style:             none;
+}
+
+#errorExplanation ul li {
+  font-size:              12px;
+  margin:                 4px;
+}
+
+#navigation {
+  margin-top:             6px;
+  margin-bottom:          0px;
+  float:                  left;
+}
+
+#navigation ul {
+  float:                  left;
+  list-style:             none;
+  margin:                 0px;
+}
+
+#navigation ul li {
+  float:                  left;
+  padding:                8px;
+  margin-left:            6px;
+}
+
+#content {
+  clear:                  both;
+  background:             white;
+  border:                 6px solid #514C2A;
+  padding:                6px;
+  margin:                 12px;
+}
+
+#footer {
+  margin:                 6px 12px;
+  color:                  #C0BAA7;
+}
+
+#flash {
+  border:                 2px solid #e3b24e;
+  background:             #e2bf76;
+  padding:                4px;
+  margin-top:             6px;
+}
+
+#flash p {
+  font-size:              14px;
+  color:                  #815908;
+}
+
+
+.fieldWithErrors input,
+.fieldWithErrors select {
+  border:                2px solid red;
+}
+
+.row {
+  float:                  left;
+  clear:                  both;
+  width:                  100%;
+}
+
+.field {
+  float:                  left;
+}
+
+.newline{
+  clear:                  both;
+  float:                  left;
+}
+
+.dark {
+  background:             #9B95B4;
+}
+
+.bookEdit,
+.bookView {
+  font-size:              smaller;
+}
+
+.book,
+.author {
+  font-size:              13px;
+}
+
+.description {
+  font-size:              smaller;
+  margin-bottom:          6px;
+}

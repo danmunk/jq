@@ -1,0 +1,12 @@
+%h1 Book Info
+%dl
+  %dt
+    %label Title
+  %dd= h(@book.title)
+  %dt
+    %label Author
+  %dd= h(@book.author)
+  %dt
+    %label Description
+  %dd= h(truncate(@book.description, :size => 90))
+    

@@ -1,0 +1,20 @@
+#sort
+  %p Sort
+%ul#books
+  - for book in @books 
+    %li.book
+      = link_to '+', '#', :class => 'bookExpand'
+      %span.title
+        = h(book.title) 
+        written by
+      %span.author= h(book.author) 
+
+      .description
+        = h(book.description)
+
+#sortOverlay
+  %p Sort
+
+  %ul
+    %li= link_to "Sort by Title", ".title", :class => 'divSort'
+    %li= link_to "Sort by Author", ".author", :class => 'divSort'
